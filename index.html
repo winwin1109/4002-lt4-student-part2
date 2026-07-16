@@ -284,30 +284,6 @@
             .document-container { padding: 30px 20px; margin-top: 90px; }
             .instruction-header { flex-direction: column; align-items: flex-start; }
             .score-display { margin-left: 0; margin-top: 10px; width: 100%; justify-content: center; box-sizing: border-box; }
-            
-            /* 強制將表格解構為垂直堆疊的區塊，加入 !important 避免 iOS Safari 預設表格排版干擾 */
-            table.custom-table, table.custom-table tbody, table.game-table, table.game-table tbody {
-                display: block !important; width: 100% !important;
-            }
-            table.custom-table tr, table.game-table tr {
-                display: flex !important; flex-direction: column !important; width: 100% !important; box-sizing: border-box !important;
-            }
-            table.custom-table td, table.custom-table th, table.game-table td, table.game-table th {
-                display: block !important; width: 100% !important; box-sizing: border-box !important;
-            }
-            
-            table.custom-table thead, table.game-table thead { display: none !important; }
-            
-            table.custom-table tr { margin-bottom: 20px !important; border-bottom: 3px solid var(--candy-mint) !important; padding-bottom: 15px !important;}
-            table.custom-table td { border-bottom: none !important; padding: 15px !important; }
-            
-            table.game-table tr { margin-bottom: 15px !important; border: 2px solid var(--border-color) !important; border-radius: 10px !important; overflow: hidden !important;}
-            table.game-table td { padding: 15px !important; border-right: none !important;}
-            table.game-table td:nth-child(1) { background: var(--candy-yellow) !important; font-size: 1.1rem !important; border-bottom: 2px dashed #edf2f7 !important; text-align: left !important; }
-            
-            /* 為遊戲表格加入明確的欄位提示字眼 */
-            table.game-table td:nth-child(2)::before { content: "【新聞稿】"; font-weight: 900; color: #0984e3; display: block; margin-bottom: 8px; }
-            table.game-table td:nth-child(3)::before { content: "【推廣信】"; font-weight: 900; color: #e84393; display: block; margin-bottom: 8px; margin-top: 5px;}
         }
 
         /* 針對小型螢幕 (iPhone, Android 手機直向) */
